@@ -6,6 +6,8 @@ import "./App.css";
 import "./bootstrap.min.css";
 
 import Home from "./components/Home";
+import TrainAI from "./components/TrainAI";
+import Result from "./components/Result";
 
 function App(props) {
   return (
@@ -15,12 +17,14 @@ function App(props) {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/home">Traning</Nav.Link>
+            <Nav.Link href="/TrainAI">Traning</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
       <div>
         <Route render={() => <Home />} path="/home" />
+        <Route render={() => <TrainAI />} path="/TrainAI" />
+        <Route render={() => <Result />} path="/Result" />
       </div>
     </Router>
   );
