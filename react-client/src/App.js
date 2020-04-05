@@ -17,7 +17,7 @@ function App(props) {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/TrainAI">Traning</Nav.Link>
+            <Nav.Link href="/TrainAI">Training</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

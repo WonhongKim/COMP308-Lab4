@@ -77,7 +77,11 @@ function TrainAI(props) {
             <div className="col-4"></div>
             <div
               className="col-4"
-              style={{ textAlign: "center", marginTop: "20px" }}
+              style={{
+                textAlign: "center",
+                marginTop: "20px",
+                border: "2px solid",
+              }}
             >
               <Form>
                 <Form.Group>
@@ -154,7 +158,7 @@ function TrainAI(props) {
                 </Form.Group>
               </Form>
               <button className="btn btn-primary btn-md" onClick={Training}>
-                Login
+                Train & Test
               </button>
             </div>
             <div className="col-4"></div>
@@ -165,10 +169,13 @@ function TrainAI(props) {
   } else {
     return (
       <div>
-        <div className="row" style={{ marginTop: "40px" }}>
-          <div className="col-4"></div>
-          <div className="col-4">
-            <Jumbotron>
+        <Jumbotron>
+          <div
+            className="row"
+            style={{ marginTop: "40px", textAlign: "center" }}
+          >
+            <div className="col-4"></div>
+            <div className="col-4">
               <h1 className="display-4">Test is Done</h1>
               <p className="lead">Click the button to see the result</p>
               <Link
@@ -181,10 +188,10 @@ function TrainAI(props) {
               >
                 Show Result
               </Link>
-            </Jumbotron>
+            </div>
+            <div className="col-4"></div>
           </div>
-          <div className="col-4"></div>
-        </div>
+        </Jumbotron>
       </div>
     );
   }
